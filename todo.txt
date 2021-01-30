@@ -1,0 +1,4 @@
+Create a home page.
+Retrieve all info and jasons for required anime.
+Render a page for list of all anime.
+Add HTML pages for all anime.
