@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Hachi Maru Pop', cursive; */
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2 {
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #eb5e0b;
+    height: 50px;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar .container .flex {
+    justify-content: space-between;
+}
+
+
+/* List */
+
+.list>.flex {
+    flex-direction: column;
+}
+
+.list {
+    background-color: #eb5e0b;
+}
+
+.tabs>button:hover {
+    background-color: white;
+    color: #333;
+}
+
+.filler>h2,
+.filler>p {
+    color: #ec524b;
+}
+
+.manga,
+.mixed,
+.filler,
+.anime {
+    width: 100%;
+}
+
+
+/* Episodes */
+
+#head {
+    background-color: #0a043c;
+    color: white;
+}
+
+.episodes>.flex {
+    flex-direction: column;
+}
+
+#airdate {
+    width: auto;
+}
+
+#drop {
+    height: 30px;
+    margin-left: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.episodes .container .flex {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.opt {
+    padding: 10px;
+    font-size: 15px;
+    /* margin: auto; */
+}
+
+.episodes {
+    overflow: auto;
+}
+
+
+/* Utilities */
+
+
+/* Classes */
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* Buttons */
+
+button {
+    /* font-family: 'Hachi Maru Pop', cursive; */
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #eb5e0b;
+    /* background-color: black; */
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #0a043c;
+    color: white;
+}
+
+.active {
+    background-color: white;
+    color: #333;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f1f1;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid gray;
+}
+
+.green {
+    background-color: #61b15a;
+    border-radius: 5px;
+    color: white;
+}
+
+.red {
+    background-color: #ec524b;
+    border-radius: 5px;
+    color: white;
+}
+
+
+/* Label */
+
+label {
+    font-size: 20px;
+}
+
+
+/* Margins */
+
+
+/* All sides */
+
+.m1 {
+    margin: 5px;
+}
+
+.m2 {
+    margin: 10px;
+}
+
+.m3 {
+    margin: 15px;
+}
+
+.m4 {
+    margin: 20px;
+}
+
+.m5 {
+    margin: 25px;
+}
+
+
+/* top & bottom */
+
+.my1 {
+    margin: 5px 0;
+}
+
+.my2 {
+    margin: 10px 0;
+}
+
+.my3 {
+    margin: 15px 0;
+}
+
+.my4 {
+    margin: 20px 0;
+}
+
+.my5 {
+    margin: 25px 0;
+}
+
+
+/* left & right */
+
+.mx1 {
+    margin: 0 5px;
+}
+
+.mx2 {
+    margin: 0 10px;
+}
+
+.mx3 {
+    margin: 0 15px;
+}
+
+.mx4 {
+    margin: 0 20px;
+}
+
+.mx5 {
+    margin: 0 25px;
+}
+
+
+/* Paddings */
+
+
+/* All sides */
+
+.p1 {
+    padding: 5px;
+}
+
+.p2 {
+    padding: 10px;
+}
+
+.p3 {
+    padding: 15px;
+}
+
+.p4 {
+    padding: 20px;
+}
+
+.p5 {
+    padding: 25px;
+}
+
+
+/* top & bottom */
+
+.py1 {
+    padding: 5px 0;
+}
+
+.py2 {
+    padding: 10px 0;
+}
+
+.py3 {
+    padding: 15px 0;
+}
+
+.py4 {
+    padding: 20px 0;
+}
+
+.py5 {
+    padding: 25px 0;
+}
+
+
+/* left & right */
+
+.px1 {
+    padding: 0 5px;
+}
+
+.px2 {
+    padding: 0 10px;
+}
+
+.px3 {
+    padding: 0 15px;
+}
+
+.px4 {
+    padding: 0 20px;
+}
+
+.px5 {
+    padding: 0 25px;
+}
+
+
+/* Media queries */
+
+
+/* Mobile */
+
+@media (max-width: 720px) {
+    .info .flex {
+        flex-direction: column;
+    }
+    .list .container .flex {
+        flex-direction: column;
+    }
+    p,
+    td,
+    th,
+    button,
+    label {
+        font-size: 15px;
+    }
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+    button {
+        height: 20px;
+    }
+}
