@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/naruto.png" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Naruto Filler List</h1>
+                <br>
+                <p>
+                    Naruto was an anime series that ran from 2002 to 2007. In total 220 episodes of Naruto were aired. With a total of 90 reported filler episodes, Naruto has a high filler percentage of 41%.<br><br>Naruto Uzumaki is a young ninja rejected
+                    by his village\xa0for having the\xa0Nine-Tailed\xa0beast sealed within him. Naruto works toward his dreams of becoming the leader of the village called the Hokage and having the respect of the other\xa0villagers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-6, 8, 10-13, 17, 22, 25, 31-36, 42, 48, 50-51, 61-62, 64-65, 67-68, 73, 75-82, 84-96, 107-111, 115-125, 128-129, 132-135
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    7, 9, 14-16, 18-21, 23-24, 27-30, 37-41, 43-47, 49, 52-60, 63, 66, 69-72, 74, 83, 98-100, 112-114, 126-127, 130-131, 141-142, 220
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    26, 97, 101-106, 136-140, 143-219
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Naruto Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

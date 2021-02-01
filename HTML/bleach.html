@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/bleach.png" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Bleach Filler List</h1>
+                <br>
+                <p>
+                    Bleach was an anime series that ran from 2004 to 2012. In total 366 episodes of Bleach were aired. With a total of 163 reported filler episodes, Bleach has a high filler percentage of 45%.<br><br>BLEACH follows the story of Ichigo
+                    Kurosaki. When Ichigo meets Rukia Kuchiki, his life is changed forever.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-26, 28-31, 34-45, 47-49, 51-63, 110, 112-115, 117-118, 120-127, 138-140, 142, 144-145, 150-155, 157-159, 162-167, 191-192, 194-203, 208, 210-212, 215-221, 224-226, 266, 269-273, 275, 277-283, 286, 289, 292-294, 296-297, 300-302, 306-309, 344, 346-350,
+                    352-354, 356-366
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    27, 32, 46, 109, 111, 116, 119, 141, 143, 146, 156, 160-161, 190, 193, 206-207, 209, 222-223, 267-268, 274, 276, 285, 288, 290-291, 295, 310, 342-343, 345, 351
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    33, 50, 64-108, 128-137, 147-149, 168-189, 204-205, 213-214, 227-265, 287, 298-299, 303-305, 311-341, 355
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    284
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Bleach Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

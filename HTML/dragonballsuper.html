@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/dragonballsuper.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Dragon Ball Super Filler List</h1>
+                <br>
+                <p>
+                    Dragon Ball Super was an anime series that ran from 2015 to 2018. In total 131 episodes of Dragon Ball Super were aired. With a total of 14 reported filler episodes, Dragon Ball Super has a low filler percentage of 11%.<br><br>Shortly
+                    after the defeat of Majin Buu, Goku has taken a completely new role as...a radish farmer?! With Earth at peace, our heroes have settled into normal lives. But they can’t get too comfortable. Far away, the powerful God of Destruction,
+                    Beerus, awakens to a prophecy revealing his demise at the hands of an even more formidable being. When his search for the Saiyan God brings him to Earth, can Goku and his friends take on their strongest foe yet?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    3, 5-14, 18-21, 23-41, 47-49, 51, 53-67, 77, 82-88, 92-93, 96-131
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    1-2, 89
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    4, 15, 42-46, 68-70, 73-76
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    16-17, 22, 50, 52, 71-72, 78-81, 90-91, 94-95
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Dragon Ball Super Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

@@ -57,7 +57,7 @@ fetch.addEventListener('click', loadEpisodes);
 function loadEpisodes(e) {
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', '../JSON/onepiece.json', true);
+    xhr.open('GET', '../JSON/one-piece.json', true);
 
     xhr.onload = function() {
         if (this.status === 200) {

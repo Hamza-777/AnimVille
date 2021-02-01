@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/elfenlied.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Elfen Lied Filler List</h1>
+                <br>
+                <p>
+                    Elfen Lied was an anime series that ran from 2004 to 2004. In total 13 episodes of Elfen Lied were aired. Elfen Lied has no reported filler.<br><br>Lucy is a special breed of human referred to as "Diclonius," born with a short pair
+                    of horns and invisible telekinetic hands that lands her as a victim of inhumane scientific experimentation by the government. However, once circumstances present her an opportunity to escape, Lucy, corrupted by the confinement and
+                    torture, unleashes a torrent of bloodshed as she escapes her captors.<br><br>During her breakout, she receives a crippling head injury that leaves her with a split personality: someone with the mentality of a harmless child possessing
+                    limited speech capacity. In this state of instability, she stumbles upon two college students, Kouta and his cousin Yuka, who unknowingly take an injured fugitive into their care, unaware of her murderous tendencies. This act of kindness
+                    will change their lives, as they soon find themselves dragged into the shadowy world of government secrecy and conspiracy.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-12
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    13
+                </p>
+            </div>
+            <!-- <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    25
+                </p>
+            </div>
+            <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Elfen Lied Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

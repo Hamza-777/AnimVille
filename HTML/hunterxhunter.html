@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/hunterxhunter.png" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Hunter × Hunter (2011) Filler List</h1>
+                <br>
+                <p>
+                    Hunter × Hunter (2011) was an anime series that ran from 2011 to 2014. In total 148 episodes of Hunter × Hunter (2011) were aired. With a total of 2 reported filler episodes, Hunter × Hunter (2011) has a very low filler percentage of 1%.<br><br>Gon,
+                    a young boy who lives on Whale Island, dreams of becoming a Hunter like his father, who left when Gon was still young.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-4, 7-11, 14-22, 25, 27-147
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    5-6, 12, 23-24, 148
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    13, 26
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Hunter × Hunter (2011) Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

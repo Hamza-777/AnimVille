@@ -33,7 +33,7 @@ p {
 /* Navbar */
 
 .navbar {
-    background-color: #eb5e0b;
+    background-color: #30475e;
     height: 50px;
     color: white;
     border-bottom: 2px solid black;
@@ -55,12 +55,12 @@ nav {
 }
 
 .list {
-    background-color: #eb5e0b;
+    background-color: #30475e;
 }
 
 .tabs>button:hover {
-    background-color: white;
-    color: #333;
+    background-color: #0a043c;
+    color: white;
 }
 
 .filler>h2,
@@ -79,7 +79,7 @@ nav {
 /* Episodes */
 
 #head {
-    background-color: #0a043c;
+    background-color: #30475e;
     color: white;
 }
 
@@ -155,7 +155,7 @@ button {
     padding: 0 10px;
     margin: 10px;
     border-radius: 5px;
-    background-color: #eb5e0b;
+    background-color: #30475e;
     /* background-color: black; */
     color: white;
     font-size: 20px;
@@ -172,8 +172,8 @@ button:hover {
 }
 
 .active {
-    background-color: white;
-    color: #333;
+    background-color: #0a043c;
+    color: white;
 }
 
 

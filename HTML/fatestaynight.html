@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/fatesn.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Fate/stay night Filler List</h1>
+                <br>
+                <p>
+                    Fate/stay night was an anime series that ran from 2006 to 2006. In total 24 episodes of Fate/stay night were aired. With a total of 3 reported filler episodes, Fate/stay night has a low filler percentage of 13%.<br><br>\xa0<br><br>Raised
+                    by a mysterious sorcerer after the horrific death of his parents, Shirou Emiya has only just begun to help others using the small tidbits of magic that he's learned. However, when he's suddenly caught in a battle between two more powerful
+                    Magus, Shirou finds himself performing a spell above his expected ability, summoning the beautiful spirit warrior Saber to protect him! But safety is only momentary as Shirou and Saber now find themselves thrust into in a secret world
+                    of dark magic and deadly challenges: a no-holds barred duel to the death known as the Holy Grail War! At stake: a prize of unimaginable power. But can the inexperienced Shirou and Saber survive long enough to even enter the contest?
+                    First they'll have to withstand waves of treachery and assassination, even as Shirou scrambles to learn everything he'll need to know to stay alive as seven teams of Magus and Spirit Servants face off in mortal combat!\xa0<br><br>(adapted
+                    from the Visual Novel by Type-Moon)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    1-5, 7-16, 19-24
+                </p>
+            </div>
+            <!-- <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    26
+                </p>
+            </div> -->
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    6, 17-18
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Fate/stay night Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>

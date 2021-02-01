@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>AnimVille</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container flex">
+            <nav class="flex">
+                <a href="home.html">
+                    <h1>AnimVille</h1>
+                </a>
+                <a href="#"><button style="font-size:24px"><i class="fa fa-bars"></i></button></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info my2">
+        <div class="container flex">
+            <div class="image card">
+                <img src="../images/narutoshippuden.jpg" alt="One Piece Image">
+            </div>
+            <div class="about card">
+                <h1>Naruto Shippuden Filler List</h1>
+                <br>
+                <p>
+                    Naruto Shippuden was an anime series that ran from 2007 to 2017. In total 500 episodes of Naruto Shippuden were aired. With a total of 205 reported filler episodes, Naruto Shippuden has a high filler percentage of 41%.<br><br>Set two-and-a-half
+                    years after the defection of Sasuke Uchiha, Shippuden continues where Naruto left off. Becoming increasingly powerful;\xa0Naruto will stop at nothing to protect his village,\xa0save his friend, and put an end to the evil organization
+                    known as the Akatsuki.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="list my2">
+        <div class="container flex">
+            <div class="tabs flex">
+                <button id="all" class="active">Show All Episodes</button>
+                <button id="filler">Show Filler Episodes</button>
+                <button id="canon">Show Canon Episodes</button>
+            </div>
+            <div class="manga card">
+                <h2>Manga Canon Episodes:</h2>
+                <br>
+                <p>
+                    20-23, 26-27, 29-44, 46-48, 51-53, 55, 72-88, 113-114, 116-126, 129-143, 152-169, 172-175, 197-212, 214-222, 243-256, 261-270, 272-278, 282-283, 296-302, 321-323, 325-326, 329, 332-337, 339-345, 363-375, 378-384, 387, 391-393, 414-415, 418, 420-421, 424-425,
+                    459, 463, 470, 473-477, 484-500
+                </p>
+            </div>
+            <div class="mixed card">
+                <h2>Mixed Canon/Filler Episodes:</h2>
+                <br>
+                <p>
+                    1-19, 24-25, 45, 49-50, 54, 56, 89-90, 115, 127-128, 213, 324, 327-328, 330-331, 338, 346, 362, 385-386, 419, 426, 451-458, 460-462, 471-472, 478-479
+                </p>
+            </div>
+            <div class="filler card">
+                <h2>Filler Episodes:</h2>
+                <br>
+                <p>
+                    28, 57-71, 91-112, 144-151, 170-171, 176-196, 223-242, 257-260, 271, 279-281, 284-295, 303-320, 347-361, 376-377, 388-390, 394-413, 416-417, 422-423, 427-450, 464-469, 480-483
+                </p>
+            </div>
+            <!-- <div class="anime card">
+                <h2>Anime Canon Episodes:</h2>
+                <br>
+                <p>
+                    50-51, 93, 213-216, 418-420, 453-456, 497-499, 506, 737
+                </p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="episodes my2">
+        <div class="container flex">
+            <h1>Naruto Shippuden Episode List</h1>
+            <div class="flex">
+                <button id="fetch">Get Episodes</button>
+                <div>
+                    <label>Jump to episode: </label>
+                    <select id="drop" onchange="location = this.value;" disabled>
+                        
+                    </select>
+                </div>
+            </div>
+            <table class="card" id="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/onepiece.js"></script>
+</body>
+
+</html>
