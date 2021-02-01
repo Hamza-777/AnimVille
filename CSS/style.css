@@ -13,6 +13,19 @@ body {
     animation: load 2s ease-in;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
 h1,
 h2 {
     letter-spacing: 1.5px;
@@ -112,7 +125,36 @@ select:focus {
 }
 
 .episodes {
-    overflow: auto;
+    overflow-x: scroll;
+}
+
+.episodes::-webkit-scrollbar {
+    width: 1em;
+}
+
+.episodes::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.episodes::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+/* Footer */
+
+footer .flex {
+    justify-content: space-around;
+}
+
+footer h1 {
+    font-size: 25px;
+}
+
+footer {
+    background-color: #30475e;
+    color: white;
 }
 
 
@@ -149,7 +191,7 @@ select:focus {
 button {
     /* font-family: 'Hachi Maru Pop', cursive; */
     font-family: 'Roboto', sans-serif;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
     height: 40px;
     padding: 0 10px;
@@ -158,7 +200,7 @@ button {
     background-color: #30475e;
     /* background-color: black; */
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1.5px;
 }
 
@@ -383,7 +425,7 @@ label {
         font-size: 20px;
     }
     button {
-        height: 20px;
+        height: 30px;
     }
 }
 

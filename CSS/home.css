@@ -9,6 +9,20 @@
 body {
     /* font-family: 'Hachi Maru Pop', cursive; */
     font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 
 h1,
@@ -31,7 +45,7 @@ p {
 /* Navbar */
 
 .navbar {
-    background-color: #eb5e0b;
+    background-color: #30475e;
     height: 50px;
     color: white;
     border-bottom: 2px solid black;
@@ -45,72 +59,79 @@ nav {
     justify-content: space-between;
 }
 
+.navbar i {
+    display: none;
+}
 
-/* List */
 
-.list>.flex {
+/* Welcome */
+
+.welcome p {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.welcome .flex {
     flex-direction: column;
 }
 
-.list {
-    background-color: #eb5e0b;
+.welcome h1 {
+    margin-top: 70px;
+    font-size: 40px;
 }
 
-.tabs>button:hover {
-    background-color: white;
-    color: #333;
+
+/* Suggestions */
+
+.suggestions {
+    margin-top: 50px;
 }
 
-.filler>h2,
-.filler>p {
-    color: #ec524b;
+.suggestions .flex {
+    flex-direction: column;
 }
 
-.manga,
-.mixed,
-.filler,
-.anime {
+.popular,
+.oneseason {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 25px;
+}
+
+.suggestions h2 {
+    width: 100%;
+    justify-self: left;
+}
+
+.popular::-webkit-scrollbar,
+.oneseason::-webkit-scrollbar {
+    width: 1em;
+}
+
+.popular::-webkit-scrollbar-track,
+.oneseason::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.popular::-webkit-scrollbar-thumb,
+.oneseason::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
 
 
-/* Episodes */
+/* Footer */
 
-#head {
-    background-color: #0a043c;
+footer .flex {
+    background-color: #30475e;
     color: white;
-}
-
-.episodes>.flex {
-    flex-direction: column;
-}
-
-#airdate {
-    width: auto;
-}
-
-#drop {
-    height: 30px;
-    margin-left: 10px;
-}
-
-select:focus {
-    outline: none;
-}
-
-.episodes .container .flex {
     justify-content: space-around;
-    width: 100%;
 }
 
-.opt {
-    padding: 10px;
-    font-size: 15px;
-    /* margin: auto; */
-}
-
-.episodes {
-    overflow: auto;
+footer h1 {
+    font-size: 25px;
 }
 
 
@@ -128,7 +149,7 @@ select:focus {
 
 .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -147,13 +168,13 @@ select:focus {
 button {
     /* font-family: 'Hachi Maru Pop', cursive; */
     font-family: 'Roboto', sans-serif;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
     height: 40px;
     padding: 0 10px;
     margin: 10px;
     border-radius: 5px;
-    background-color: #eb5e0b;
+    background-color: #30475e;
     /* background-color: black; */
     color: white;
     font-size: 20px;
@@ -170,8 +191,8 @@ button:hover {
 }
 
 .active {
-    background-color: white;
-    color: #333;
+    background-color: #0a043c;
+    color: white;
 }
 
 
@@ -363,17 +384,8 @@ label {
 /* Mobile */
 
 @media (max-width: 720px) {
-    .info .flex {
-        flex-direction: column;
-    }
-    .list .container .flex {
-        flex-direction: column;
-    }
     p,
-    td,
-    th,
-    button,
-    label {
+    button {
         font-size: 15px;
     }
     h1,
@@ -381,6 +393,12 @@ label {
         font-size: 20px;
     }
     button {
-        height: 20px;
+        height: 30px;
+    }
+    .navbar i {
+        display: inline;
+    }
+    .navbar span {
+        display: none;
     }
 }

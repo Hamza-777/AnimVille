@@ -5,6 +5,10 @@ const canon = document.getElementById('canon');
 const fetch = document.getElementById('fetch');
 const table = document.getElementById('table');
 const dropdown = document.getElementById('drop');
+const mangacanon = document.querySelector('.manga');
+const mixedcanon = document.querySelector('.mixed');
+const fillerclass = document.querySelector('.filler');
+const animecanon = document.querySelector('.anime');
 
 // Function to add active class to buttons
 const addActive = function(input) {
@@ -23,10 +27,14 @@ all.addEventListener('click', function(e) {
     removeActive(filler);
     removeActive(canon);
     addActive(all);
-    e.target.parentElement.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    mangacanon.style.display = 'block';
+    mixedcanon.style.display = 'block';
+    fillerclass.style.display = 'block';
+    animecanon.style.display = 'block';
 });
 
 filler.addEventListener('click', function(e) {
@@ -34,10 +42,14 @@ filler.addEventListener('click', function(e) {
     removeActive(all);
     removeActive(canon);
     addActive(filler);
-    e.target.parentElement.nextElementSibling.style.display = 'none';
-    e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
+    // e.target.parentElement.nextElementSibling.style.display = 'none';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
+    mangacanon.style.display = 'none';
+    mixedcanon.style.display = 'block';
+    fillerclass.style.display = 'block';
+    animecanon.style.display = 'none';
 });
 
 canon.addEventListener('click', function(e) {
@@ -45,10 +57,14 @@ canon.addEventListener('click', function(e) {
     removeActive(filler);
     removeActive(all);
     addActive(canon);
-    e.target.parentElement.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
-    e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.style.display = 'block';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'none';
+    // e.target.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display = 'block';
+    mangacanon.style.display = 'block';
+    mixedcanon.style.display = 'block';
+    fillerclass.style.display = 'none';
+    animecanon.style.display = 'block';
 });
 
 // Fetch episodes
@@ -57,7 +73,7 @@ fetch.addEventListener('click', loadEpisodes);
 function loadEpisodes(e) {
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', '../JSON/one-piece.json', true);
+    xhr.open('GET', '../JSON/parasyte-maxim.json', true);
 
     xhr.onload = function() {
         if (this.status === 200) {
@@ -89,7 +105,7 @@ function loadEpisodes(e) {
 
     let output = ``;
 
-    for (let i = 1; i < 962; i++) {
+    for (let i = 1; i < 25; i++) {
         output += `
         <option class="opt" value="#number${i}">${i}</option>     
         `;
