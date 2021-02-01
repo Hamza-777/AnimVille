@@ -32,13 +32,17 @@ h2 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #333;
 }
 
 p {
     font-size: 20px;
     line-height: 1.6em;
     letter-spacing: 1.5px;
+}
+
+li {
+    list-style-type: none;
 }
 
 
@@ -63,66 +67,33 @@ nav {
     display: none;
 }
 
-
-/* Welcome */
-
-.welcome p {
-    max-width: 1000px;
-    text-align: center;
+.navbar h1 {
+    color: white;
 }
 
-.welcome .flex {
+
+/* Lists */
+
+.lists .flex {
     flex-direction: column;
 }
 
-.welcome h1 {
-    margin-top: 70px;
-    font-size: 40px;
+.lists li {
+    line-height: 1.6em;
+    color: #30475e;
+    width: auto;
 }
 
-
-/* Suggestions */
-
-.suggestions {
-    margin-top: 50px;
-}
-
-.suggestions .flex {
-    flex-direction: column;
-}
-
-.popular,
-.oneseason {
+.lists .card {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    margin-bottom: 25px;
 }
 
-.suggestions h2 {
-    width: 100%;
-    justify-self: left;
-}
-
-.suggestions .card:hover {
+.lists li:hover {
     transform: scale(0.98);
 }
 
-.popular::-webkit-scrollbar,
-.oneseason::-webkit-scrollbar {
-    width: 1em;
-}
-
-.popular::-webkit-scrollbar-track,
-.oneseason::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.popular::-webkit-scrollbar-thumb,
-.oneseason::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+.lists h2 {
+    margin-bottom: 10px;
 }
 
 

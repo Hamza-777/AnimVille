@@ -90,7 +90,7 @@ function loadEpisodes(e) {
                 output += `
               <tr>
                     <td id="number${episodes[i].id}">${episodes[i].id}</td>
-                    <td>${episodes[i].title}</td>
+                    <td class="epiname">${episodes[i].title}</td>
                     <td>
                         <div class="${episodes[i].class}">${episodes[i].type}</div>
                     </td>
