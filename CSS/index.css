@@ -89,11 +89,25 @@ nav {
 }
 
 .lists li:hover {
-    transform: scale(0.98);
+    transform: scale(0.995);
 }
 
 .lists h2 {
     margin-bottom: 10px;
+}
+
+.lists .container .flex {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li span {
+    float: right;
+}
+
+.fa-star {
+    color: #e0b824;
 }
 
 

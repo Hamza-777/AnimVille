@@ -15,20 +15,25 @@ const data = {
     'another': 'another',
     'ac': 'ansatsu-kyoushitsu-assassination-classroom',
     'aot': 'attack-titan',
+    'ab': 'angel-beats',
     'bb': 'beelzebub',
+    'blackb': 'black-butler',
     'berserk': 'berserk-2016',
     'bc': 'black-clover',
     'bl': 'black-lagoon',
     'bleach': 'bleach',
     'be': 'blue-exorcist',
     'boruto': 'boruto-naruto-next-generations',
+    'cb': 'cowboy-bebop',
     'ce': 'classroom-elite',
     'cg': 'code-geass',
+    'dp': 'death-parade',
     'dw': 'deadman-wonderland',
     'dn': 'death-note',
     'ds': 'demon-slayer-kimetsu-no-yaiba',
     'dpt': 'devil-part-timer',
     'dc': 'devilman-crybaby',
+    'detectiveconan': 'detective-conan',
     'drs': 'dr-stone',
     'dbgt': 'dragon-ball-gt',
     'dbh': 'dragon-ball-heroes',
@@ -44,10 +49,12 @@ const data = {
     'ff': 'fire-force',
     'fb': 'fruits-basket-2019',
     'fmab': 'fullmetal-alchemist-brotherhood',
+    'ga': 'gangsta',
     'gintama': 'gintama',
     'gs': 'goblin-slayer',
     'ghs': 'god-high-school',
     'gl': 'gurren-lagann',
+    'gto': 'great-teacher-onizuka',
     'haikyu': 'haikyuu',
     'hdxd': 'high-school-dxd',
     'hsd': 'highschoool-dead',
@@ -69,6 +76,7 @@ const data = {
     'pokemon': 'pokemon',
     'ps': 'prison-school',
     'pn': 'promised-neverland',
+    'pp': 'psycho-pass',
     're': 're-zero-starting-life-another-world',
     'sc': 'samurai-champloo',
     'sel': 'serial-experiments-lain',
@@ -80,7 +88,8 @@ const data = {
     'tr': 'terror-resonance',
     'tgr': 'tokyo-ghoul-re-0',
     'tg': 'tokyo-ghoul',
-    'vs': 'vinland-saga'
+    'vs': 'vinland-saga',
+    'zb': 'zatch-bell'
 }
 
 let count = 0;
@@ -98,36 +107,57 @@ const removeActive = function(input) {
 // Event listener for the buttons
 
 all.addEventListener('click', function(e) {
-    // console.log(e.target.parentElement.nextElementSibling);
     removeActive(filler);
     removeActive(canon);
     addActive(all);
-    mangacanon.style.display = 'block';
-    mixedcanon.style.display = 'block';
-    fillerclass.style.display = 'block';
-    animecanon.style.display = 'block';
+    if (mangacanon) {
+        mangacanon.style.display = 'block';
+    }
+    if (mixedcanon) {
+        mixedcanon.style.display = 'block';
+    }
+    if (fillerclass) {
+        fillerclass.style.display = 'block';
+    }
+    if (animecanon) {
+        animecanon.style.display = 'block';
+    }
 });
 
 filler.addEventListener('click', function(e) {
-    // console.log(e.target);
     removeActive(all);
     removeActive(canon);
     addActive(filler);
-    mangacanon.style.display = 'none';
-    mixedcanon.style.display = 'block';
-    fillerclass.style.display = 'block';
-    animecanon.style.display = 'none';
+    if (mangacanon) {
+        mangacanon.style.display = 'none';
+    }
+    if (mixedcanon) {
+        mixedcanon.style.display = 'block';
+    }
+    if (fillerclass) {
+        fillerclass.style.display = 'block';
+    }
+    if (animecanon) {
+        animecanon.style.display = 'none';
+    }
 });
 
 canon.addEventListener('click', function(e) {
-    // console.log(e.target.parentElement.nextElementSibling);
     removeActive(filler);
     removeActive(all);
     addActive(canon);
-    mangacanon.style.display = 'block';
-    mixedcanon.style.display = 'block';
-    fillerclass.style.display = 'none';
-    animecanon.style.display = 'block';
+    if (mangacanon) {
+        mangacanon.style.display = 'block';
+    }
+    if (mixedcanon) {
+        mixedcanon.style.display = 'block';
+    }
+    if (fillerclass) {
+        fillerclass.style.display = 'none';
+    }
+    if (animecanon) {
+        animecanon.style.display = 'block';
+    }
 });
 
 // Fetch episodes
@@ -149,9 +179,15 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Attack on Titan Episode List') {
         xhr.open('GET', `../JSON/${data['aot']}.json`, true);
         count = 70;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Angel Beats! Episode List') {
+        xhr.open('GET', `../JSON/${data['ab']}.json`, true);
+        count = 15;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Beelzebub Episode List') {
         xhr.open('GET', `../JSON/${data['bb']}.json`, true);
         count = 60;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Black Butler Episode List') {
+        xhr.open('GET', `../JSON/${data['blackb']}.json`, true);
+        count = 46;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Berserk (2016) Episode List') {
         xhr.open('GET', `../JSON/${data['berserk']}.json`, true);
         count = 24;
@@ -170,12 +206,18 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Boruto: Naruto Next Generations Episode List') {
         xhr.open('GET', `../JSON/${data['boruto']}.json`, true);
         count = 188;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Cowboy Bebop Episode List') {
+        xhr.open('GET', `../JSON/${data['cb']}.json`, true);
+        count = 26;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Classroom of the Elite Episode List') {
         xhr.open('GET', `../JSON/${data['ce']}.json`, true);
         count = 12;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Code Geass Episode List') {
         xhr.open('GET', `../JSON/${data['cg']}.json`, true);
         count = 55;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Case Closed Episode List') {
+        xhr.open('GET', `../JSON/${data['detectiveconan']}.json`, true);
+        count = 999;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Deadman Wonderland Episode List') {
         xhr.open('GET', `../JSON/${data['dw']}.json`, true);
         count = 13;
@@ -188,6 +230,9 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'The Devil Is a Part-Timer! Episode List') {
         xhr.open('GET', `../JSON/${data['dpt']}.json`, true);
         count = 13;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Death Parade Episode List') {
+        xhr.open('GET', `../JSON/${data['dp']}.json`, true);
+        count = 12;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Devilman Crybaby Episode List') {
         xhr.open('GET', `../JSON/${data['dc']}.json`, true);
         count = 10;
@@ -236,6 +281,9 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Fullmetal Alchemist: Brotherhood Episode List') {
         xhr.open('GET', `../JSON/${data['fmab']}.json`, true);
         count = 64;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'GANGSTA. Episode List') {
+        xhr.open('GET', `../JSON/${data['ga']}.json`, true);
+        count = 12;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Gintama Episode List') {
         xhr.open('GET', `../JSON/${data['gintama']}.json`, true);
         count = 369;
@@ -248,6 +296,9 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Gurren Lagann Episode List') {
         xhr.open('GET', `../JSON/${data['gl']}.json`, true);
         count = 27;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Great Teacher Onizuka Episode List') {
+        xhr.open('GET', `../JSON/${data['gto']}.json`, true);
+        count = 43;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Haikyu!! Episode List') {
         xhr.open('GET', `../JSON/${data['haikyu']}.json`, true);
         count = 85;
@@ -311,6 +362,9 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'The Promised Neverland Episode List') {
         xhr.open('GET', `../JSON/${data['pn']}.json`, true);
         count = 16;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'PSYCHO-PASS Episode List') {
+        xhr.open('GET', `../JSON/${data['pp']}.json`, true);
+        count = 35;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Re:ZERO -Starting Life in Another World Episode List') {
         xhr.open('GET', `../JSON/${data['re']}.json`, true);
         count = 38;
@@ -347,6 +401,9 @@ function loadEpisodes(e) {
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Vinland Saga Episode List') {
         xhr.open('GET', `../JSON/${data['vs']}.json`, true);
         count = 24;
+    } else if (e.target.parentElement.previousElementSibling.textContent == 'Zatch Bell! Episode List') {
+        xhr.open('GET', `../JSON/${data['zb']}.json`, true);
+        count = 150;
     }
 
     xhr.onload = function() {
