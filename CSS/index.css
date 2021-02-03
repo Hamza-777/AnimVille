@@ -53,6 +53,7 @@ li {
     height: 50px;
     color: white;
     border-bottom: 2px solid black;
+    margin-bottom: 10px;
 }
 
 nav {
