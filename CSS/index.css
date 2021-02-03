@@ -339,7 +339,7 @@ button:hover {
 @media (max-width: 720px) {
     p,
     button {
-        font-size: 15px;
+        font-size: 10px;
     }
     h1,
     h2 {
@@ -354,4 +354,7 @@ button:hover {
     .navbar span {
         display: none;
     }
+    /* li span {
+        display: none;
+    } */
 }
