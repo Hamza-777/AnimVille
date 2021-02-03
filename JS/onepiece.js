@@ -193,7 +193,7 @@ function loadEpisodes(e) {
         count = 24;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Black Clover Episode List') {
         xhr.open('GET', `../JSON/${data['bc']}.json`, true);
-        count = 163;
+        count = 165;
     } else if (e.target.parentElement.previousElementSibling.textContent == 'Black Lagoon Episode List') {
         xhr.open('GET', `../JSON/${data['bl']}.json`, true);
         count = 29;
