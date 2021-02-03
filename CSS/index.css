@@ -354,7 +354,7 @@ button:hover {
     .navbar span {
         display: none;
     }
-    li span {
+    li span i {
         display: none;
     }
 }
