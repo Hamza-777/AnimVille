@@ -14,6 +14,7 @@ body {
 
 body::-webkit-scrollbar {
     width: 1em;
+    /* display: none; */
 }
 
 body::-webkit-scrollbar-track {
@@ -112,6 +113,7 @@ nav {
 .popular::-webkit-scrollbar,
 .oneseason::-webkit-scrollbar {
     width: 1em;
+    display: none;
 }
 
 .popular::-webkit-scrollbar-track,
